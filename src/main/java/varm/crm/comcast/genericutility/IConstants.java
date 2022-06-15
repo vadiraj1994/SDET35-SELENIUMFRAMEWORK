@@ -2,7 +2,7 @@ package varm.crm.comcast.genericutility;
 
 public interface IConstants 
 {
-
+//iconstant is updated with new data (engg -2)
 	String EXCELPATH="./src/test/resources/dataExcel.xlsx";
 	String propertyFilePath="./src/test/resources/Property.properties";
 	String JDBC_URL_String="jdbc:mysql://localhost:3306/projects";
