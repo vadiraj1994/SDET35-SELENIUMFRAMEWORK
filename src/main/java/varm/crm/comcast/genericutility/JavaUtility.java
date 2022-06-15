@@ -12,6 +12,7 @@ public class JavaUtility
 		int ranDomNum=ranDom.nextInt(1000);
 		return ranDomNum;
 	}
+	
 	public String getSystemDate()
 	{
 		String timeStamp = LocalDateTime.now().toString().replace(':', '-');
