@@ -23,7 +23,7 @@ import varm.crm.comcast.pomrepositoryutility.LoginToVtigerPage;
 
 public class BaseClass
 {
-	public   WebDriver driver;
+	public   WebDriver driver;//Add sDriver by making It as Static..
 	public static WebDriver sDriver;//For Screenshot method usage..
 	public FileUtility flib=new FileUtility();
 	public ExcelUtility elib=new ExcelUtility();
