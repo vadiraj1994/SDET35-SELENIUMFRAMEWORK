@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Batch Execution]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="varm.crm.comcast.genericutility.ListenerUtility"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="varm.crm.comcast.organisationTest.CreateOrganisationTest">
+        <methods>
+          <include name="createOrganisationTest"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="logOut"/>
+          <include name="closeTheBrowser"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="LoginToApp"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- varm.crm.comcast.organisationTest.CreateOrganisationTest -->
+      <class name="varm.crm.comcast.contactTest.DeleteContactTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="logOut"/>
+          <include name="closeTheBrowser"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="LoginToApp"/>
+          <include name="launchBrowser"/>
+          <include name="deleteContactTest"/>
+        </methods>
+      </class> <!-- varm.crm.comcast.contactTest.DeleteContactTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Batch Execution] -->

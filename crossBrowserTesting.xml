@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuite"  verbose="5" parallel="tests">
+<parameter name="appUrl" value="http://demo.actitime.com"/>
+<parameter name="username" value="admin"/>
+<parameter name="password" value="manager"/>
+  <test name="ChromeTest" parallel="classes">
+  <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="xmlconfiguration.TC006"/>
+      <class name="xmlconfiguration.TC007"/>
+    </classes>
+  </test>
+   <test name="FirefoxTest" parallel="classes">
+  <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="xmlconfiguration.TC006"/>
+      <class name="xmlconfiguration.TC007"/>
+    </classes>
+  </test> 
+</suite>

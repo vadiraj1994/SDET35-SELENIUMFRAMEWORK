@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<groups>
+<run>
+<include name="smokeTest"/>
+</run>
+</groups>
+<listeners>
+<listener class-name="varm.crm.comcast.genericutility.ListenerUtility"/>
+</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="varm.crm.comcast.contactTest.DeleteContactTest"/>
+      <class name="varm.crm.comcast.campaignTest.CreateCampaignTest"/>
+      <class name="varm.crm.comcast.campaignTest.CreateCampaignWithProductTest"/>
+      <class name="varm.crm.comcast.contactTest.CreateContactTest"/>
+      <class name="varm.crm.comcast.organisationTest.CreateOrganisationTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
